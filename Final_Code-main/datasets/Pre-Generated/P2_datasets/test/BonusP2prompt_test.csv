@@ -1,0 +1,1392 @@
+Prompt,Output
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+        Query: Retrieve work items with type ""ticket"" and severity ""high"", summarize them, and assign the first 10 to user USER-123. [/INST]
+
+        ```
+        var_1 = works_list(type=[""ticket""], ticket.severity=[""high""])
+var_2 = summarize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""USER-123"")
+for loop_var in range(0, 10):
+     temp_1 = assign_task_to_user(task_id=var_1[loop_var], user_id=var_3)
+        ```
+        </s>
+        ","var_1 = works_list(type=[""ticket""], ticket.severity=[""high""])
+var_2 = summarize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""USER-123"")
+for loop_var in range(0, 10):
+     temp_1 = assign_task_to_user(task_id=var_1[loop_var], user_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+
+
+def estimate_ticket_resolution_time(ticket_id):
+""""""
+Estimates the resolution time for a given ticket
+
+Parameters:
+    ticket_id (str): The ID of the ticket to estimate time for
+
+Returns:
+    float: Estimated time in hours to resolve the ticket
+""""""
+
+
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def filter_objects_by_type(object_ids, object_type):
+""""""
+Filters a list of objects based on their type
+
+Parameters:
+    object_ids (list): A list of object IDs to filter
+    object_type (str): The type of objects to filter for
+
+Returns:
+    list: Filtered object IDs matching the specified type
+""""""
+
+
+def track_project_completion(project_id):
+""""""
+Tracks the completion percentage of a project based on completed tasks
+
+Parameters:
+    project_id (str): The ID of the project to track
+
+Returns:
+    float: Percentage of the project completed
+""""""
+
+        Query: Find work items with priority ""p1"" and type ""issue"", prioritize them, and add the top 3 to sprint SPRINT-321. [/INST]
+
+        ```
+        var_1 = works_list(issue.priority=[""p1""], type=[""issue""])
+var_2 = prioritize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""SPRINT-321"")
+var_4 = add_work_items_to_sprint(work_ids=var_2[0:3], sprint_id=var_3)
+        ```
+        </s>
+        ","var_1 = works_list(issue.priority=[""p1""], type=[""issue""])
+var_2 = prioritize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""SPRINT-321"")
+var_4 = add_work_items_to_sprint(work_ids=var_2[0:3], sprint_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def get_recent_activity_log(user_id, limit=10):
+""""""
+Gets the most recent activity log entries for a given user
+
+Parameters:
+    user_id (str): The ID of the user to get activities for
+    limit (int): The maximum number of activity log entries to return
+
+Returns:
+    list: Recent activity log entries
+""""""
+
+        Query: Extract tasks from the text ""ReleaseNotes"", prioritize them, and assign the first 5 to the current sprint. [/INST]
+
+        ```
+        var_1 = create_actionable_tasks_from_text(text=""ReleaseNotes"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=var_2[0:5], sprint_id=var_3)
+        ```
+        </s>
+        ","var_1 = create_actionable_tasks_from_text(text=""ReleaseNotes"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=var_2[0:5], sprint_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+
+
+def calculate_budget_remaining(budget_id):
+""""""
+Calculates the remaining budget for a given budget ID
+
+Parameters:
+    budget_id (str): The ID of the budget to calculate
+
+Returns:
+    float: The amount of remaining budget
+""""""
+
+
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+
+
+def estimate_completion_time(task_id):
+""""""
+Estimates the completion time for a given task
+
+Parameters:
+    task_id (str): The ID of the task for which to estimate completion time
+
+Returns:
+    float: The estimated number of hours to complete the task
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def track_project_completion(project_id):
+""""""
+Tracks the completion percentage of a project based on completed tasks
+
+Parameters:
+    project_id (str): The ID of the project to track
+
+Returns:
+    float: Percentage of the project completed
+""""""
+
+        Query: For all tickets with source channel ""email"", prioritize them, and assign the most critical one to the current sprint. [/INST]
+
+        ```
+        var_1 = works_list(ticket.source_channel=[""email""], type=[""ticket""])
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=[var_2[0]], sprint_id=var_3)
+        ```
+        </s>
+        ","var_1 = works_list(ticket.source_channel=[""email""], type=[""ticket""])
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=[var_2[0]], sprint_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+        Query: Find work items owned by USER-222, summarize them, and estimate the work hours for each item. [/INST]
+
+        ```
+        var_1 = search_object_by_name(query=""USER-222"")
+var_2 = works_list(owned_by=[var_1])
+var_3 = summarize_objects(objects=var_2)
+for loop_var in var_2:
+    temp_1 = estimate_work_hours(work_id=loop_var)
+        ```
+        </s>
+        ","var_1 = search_object_by_name(query=""USER-222"")
+var_2 = works_list(owned_by=[var_1])
+var_3 = summarize_objects(objects=var_2)
+for loop_var in var_2:
+    temp_1 = estimate_work_hours(work_id=loop_var)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+
+
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def list_work_attachments(work_id):
+""""""
+Lists all attachments associated with a work item.
+
+Parameters:
+    work_id (str): The ID of the work item
+
+Returns:
+    list: Attachment file IDs
+""""""
+
+        Query: Retrieve all tasks created by USER-333, prioritize them, and assign the one with the highest priority to USER-444. [/INST]
+
+        ```
+        var_1 = search_object_by_name(query=""USER-333"")
+var_2 = works_list(created_by=[var_1], type=[""task""])
+var_3 = prioritize_objects(objects=var_2)
+var_4 = search_object_by_name(query=""USER-444"")
+var_5 = assign_task_to_user(task_id=var_3[0], user_id=var_4)
+        ```
+        </s>
+        ","var_1 = search_object_by_name(query=""USER-333"")
+var_2 = works_list(created_by=[var_1], type=[""task""])
+var_3 = prioritize_objects(objects=var_2)
+var_4 = search_object_by_name(query=""USER-444"")
+var_5 = assign_task_to_user(task_id=var_3[0], user_id=var_4)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+
+
+def calculate_expense_totals(expense_ids):
+""""""
+Calculates the total amount from a list of expense IDs
+
+Parameters:
+    expense_ids (list): List of expense IDs to calculate the total amount
+
+Returns:
+    float: The total amount of the expenses
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+        Query: Extract tasks from the text ""ClientFeedback"", create a report of type ""A"" for each task without including summary, and assign the tasks to USER-555. [/INST]
+
+        ```
+        var_1 = create_actionable_tasks_from_text(text=""ClientFeedback"")
+var_2 = search_object_by_name(query = ""USER-555"")
+for loop_var in var_1:
+    temp_1 = generate_report(report_type=""A"", subject_id=loop_var, include_summary=False)
+    temp_2 = assign_task_to_user(task_id=loop_var, user_id=var_2)
+        ```
+        </s>
+        ","var_1 = create_actionable_tasks_from_text(text=""ClientFeedback"")
+var_2 = search_object_by_name(query = ""USER-555"")
+for loop_var in var_1:
+    temp_1 = generate_report(report_type=""A"", subject_id=loop_var, include_summary=False)
+    temp_2 = assign_task_to_user(task_id=loop_var, user_id=var_2)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+        Query: Create tasks from the text ""ClientMeetingSummary"", prioritize them, and assign the first 3 to user USER-999. [/INST]
+
+        ```
+        var_1 = create_actionable_tasks_from_text(text=""ClientMeetingSummary"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""USER-999"")
+for loop_var in range(0,3):
+    temp_1 = assign_task_to_user(task_id=var_2[loop_var], user_id=var_3)
+        ```
+        </s>
+        ","var_1 = create_actionable_tasks_from_text(text=""ClientMeetingSummary"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = search_object_by_name(query=""USER-999"")
+for loop_var in range(0,3):
+    temp_1 = assign_task_to_user(task_id=var_2[loop_var], user_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+
+
+def retrieve_archived_documents(archive_id, keyword=None):
+""""""
+Retrieves documents from the archive based on optional keyword
+
+Parameters:
+    archive_id (str): The ID of the archive from which to retrieve documents
+    keyword (str): Optional keyword to filter documents, default is 'None'
+
+Returns:
+    list: A list of documents matching the keyword if provided, otherwise all documents from the archive
+""""""
+
+
+def remove_users_from_group(user_ids, group_id):
+""""""
+Removes the specified users from a group
+
+Parameters:
+    user_ids (list): A list of user IDs to be removed from the group
+    group_id (str): The ID of the group from which the users should be removed
+
+Returns:
+    bool: Status of the removal
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+def assign_tickets_to_user(ticket_ids, user_id):
+""""""
+Assigns a set of tickets to a specified user
+
+Parameters:
+    ticket_ids (list): A list of ticket IDs to be assigned
+    user_id (str): The ID of the user to whom the tickets will be assigned
+
+Returns:
+    None
+""""""
+
+
+def merge_duplicate_tickets(primary_ticket_id, duplicate_ticket_ids):
+""""""
+Merges duplicate tickets into a primary ticket
+
+Parameters:
+    primary_ticket_id (str): The ID of the primary ticket that remains
+    duplicate_ticket_ids (list): The IDs of the duplicate tickets to be merged into the primary
+
+Returns:
+    None
+""""""
+
+        Query: Find work items related to part PART-234, summarize them, and estimate the work hours for each. [/INST]
+
+        ```
+        var_1 = search_object_by_name(query=""PART-234"")
+var_2 = works_list(applies_to_part=[var_1])
+var_3 = summarize_objects(objects=var_2)
+for loop_var in var_2:
+    temp_1 = estimate_work_hours(work_id=loop_var)
+        ```
+        </s>
+        ","var_1 = search_object_by_name(query=""PART-234"")
+var_2 = works_list(applies_to_part=[var_1])
+var_3 = summarize_objects(objects=var_2)
+for loop_var in var_2:
+    temp_1 = estimate_work_hours(work_id=loop_var)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def update_ticket_status(ticket_id, new_status):
+""""""
+Updates the status of a given ticket
+
+Parameters:
+    ticket_id (str): The ID of the ticket to be updated
+    new_status (str): The new status to update the ticket with
+
+Returns:
+    bool: True if the update was successful, otherwise False
+""""""
+
+        Query: Extract tasks from the text ""DevelopmentPlan"", prioritize them, and assign them to the current sprint. [/INST]
+
+        ```
+        var_1 = create_actionable_tasks_from_text(text=""DevelopmentPlan"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=var_2, sprint_id=var_3)
+        ```
+        </s>
+        ","var_1 = create_actionable_tasks_from_text(text=""DevelopmentPlan"")
+var_2 = prioritize_objects(objects=var_1)
+var_3 = get_sprint_id()
+var_4 = add_work_items_to_sprint(work_ids=var_2, sprint_id=var_3)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+
+
+def generate_report_for_sprint(sprint_id):
+""""""
+Generates a performance report for a specified sprint
+
+Parameters:
+    sprint_id (str): The ID of the sprint for which to generate the report
+
+Returns:
+    str: The ID of the generated report
+""""""
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+
+def delete_objects_by_id(object_ids):
+""""""
+Deletes objects from the system based on their IDs
+
+Parameters:
+    object_ids (list): List of object IDs to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+
+
+def validate_user_permissions(user_id, required_permissions):
+""""""
+Checks if the user has the specified permissions
+
+Parameters:
+    user_id (str): The ID of the user whose permissions need to be checked
+    required_permissions (list): A list of permissions to check against the user's permissions
+
+Returns:
+    bool: True if the user has all the required permissions, False otherwise
+""""""
+
+
+def validate_data_integrity(data_point_ids):
+""""""
+Checks the integrity of a list of data points in the system
+
+Parameters:
+    data_point_ids (list): List of data point IDs to validate
+
+Returns:
+    list: Validation results with status (True or False) for each data point
+""""""
+
+        Query: Get similar work items to ISSUE-345, summarize them, and assign the most critical one to USER-1111. [/INST]
+
+        ```
+        var_1 = search_object_by_name(query=""ISSUE-345"")
+var_2 = get_similar_work_items(work_id=var_1)
+var_3 = summarize_objects(objects=var_2)
+var_4 = prioritize_objects(objects=var_2)
+var_5 = search_object_by_name(query=""USER-1111"")
+var_6 = assign_task_to_user(task_id=var_4[0], user_id=var_5)
+        ```
+        </s>
+        ","var_1 = search_object_by_name(query=""ISSUE-345"")
+var_2 = get_similar_work_items(work_id=var_1)
+var_3 = summarize_objects(objects=var_2)
+var_4 = prioritize_objects(objects=var_2)
+var_5 = search_object_by_name(query=""USER-1111"")
+var_6 = assign_task_to_user(task_id=var_4[0], user_id=var_5)"
+"
+        <s>
+        [INST]
+        Added Tools: 
+
+        ''
+def estimate_work_hours(work_id):
+""""""
+Estimates the number of hours required to complete a specific work item
+
+Parameters:
+    work_id (str): The ID of the work item for which the estimation is to be made
+
+Returns:
+    float: Estimated hours required to complete the work item
+""""""
+''',
+'''
+def assign_task_to_user(task_id, user_id):
+""""""
+Assigns a specific task to a user
+
+Parameters:
+    task_id (str): The ID of the task to be assigned
+    user_id (str): The ID of the user to whom the task will be assigned
+
+Returns:
+    bool: True if assignment was successful, otherwise False
+""""""
+'''
+''
+def generate_report(report_type, subject_id, include_summary=True):
+""""""
+Generates a report of a specific type for a subject in the system
+
+Parameters:
+    report_type (str): The type of report to generate
+    subject_id (str): The ID of the subject for the report
+    include_summary (bool): Whether to include a summary in the report; defaults to True
+
+Returns:
+    str: The ID of the generated report
+""""""
+'''
+''
+def delete_object_by_id(object_id):
+""""""
+Deletes object from the system based on its ID
+Parameters:
+    object_id : Object ID to delete
+
+Returns:
+    bool: True if objects were successfully deleted, False otherwise
+""""""
+'''
+''
+def mark_task_as_completed(task_id):
+""""""
+Marks a task as completed in the system.
+
+Parameters:
+ task_id (str): The ID of the task to be marked as complete
+
+Returns:
+ bool: True if marked successfully, False otherwise
+""""""
+
+
+def generate_report_data(report_type, data_set_id):
+""""""
+Generates report data based on the provided report type and data set
+
+Parameters:
+    report_type (str): The type of report to generate
+    data_set_id (str): The ID of the data set to be used for the report
+
+Returns:
+    str: A report data string or ID depending on internal implementation
+""""""
+''
+def find_team_members(team_id):
+""""""
+Returns a list of user IDs that are members of the specified team
+
+Parameters:
+    team_id (str): The ID of the team
+
+Returns:
+    list: User IDs of the team members
+""""""
+'''
+
+        Query: Search for the object ID with the name ""ProjectAlpha"" and generate a report for it, including a summary. [/INST]
+
+        ```
+        var_1 = search_object_by_name(query=""ProjectAlpha"")
+var_2 = generate_report(report_type=""object"", subject_id=var_1, include_summary=True)
+        ```
+        </s>
+        ","var_1 = search_object_by_name(query=""ProjectAlpha"")
+var_2 = generate_report(report_type=""object"", subject_id=var_1, include_summary=True)"
